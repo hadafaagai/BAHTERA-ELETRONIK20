@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bahtera Elektronik</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #b8bcce;
+            color: #1c2129;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5') center/cover no-repeat;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3.2rem;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        }
+
+        .btn-primary {
+            margin-top: 20px;
+            padding: 14px 28px;
+            background: #0077ff;
+            border: none;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .menu-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .menu-card {
+            background: white;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-card h3 {
+            margin: 15px 0 5px;
+        }
+
+        .menu-card p {
+            padding: 0 15px 20px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav style="position:fixed; top:0; left:0; width:100%; background:#004aad; padding:15px; z-index:999; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.3);">
+    <a href="#beranda" style="margin:0 15px; color:white; text-decoration:none; font-weight:bold;">Beranda</a>
+    <a href="#tentang-kami" style="margin:0 15px; color:white; text-decoration:none; font-weight:bold;">Tentang</a>
+    <a href="#layanan-kami" style="margin:0 15px; color:white; text-decoration:none; font-weight:bold;">Layanan</a>
+    <a href="#testimoni" style="margin:0 15px; color:white; text-decoration:none; font-weight:bold;">Testimoni</a>
+    <a href="#promo" style="margin:0 15px; color:white; text-decoration:none; font-weight:bold;">Promo</a>
+</nav>
+
+<header style="position:relative; overflow:hidden;">
+    <div id="slider" style="position:absolute; top:0; left:0; width:100%; height:100%; animation:slide 12s infinite; background-size:cover; background-position:center;"></div>
+    <style>
+        @keyframes slide {
+            0% { background-image:url('https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5'); }
+            33% { background-image:url('https://images.unsplash.com/photo-1581091012184-5c1a9b1d5e83'); }
+            66% { background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475'); }
+            100% { background-image:url('https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5'); }
+        }
+    </style>
+    <div>
+        <h1>Bahtera Elektronik</h1>
+        <p>Pusat Penjualan Elektronik Terpercaya & Terlengkap</p>
+        <button class="btn-primary">Lihat Produk</button>
+    </div>
+</header>
+
+<section class="section" id="beranda">
+    <h2>Selamat Datang di Bahtera Elektronik</h2>
+    <p>
+        Bahtera Elektronik adalah pusat penjualan perangkat elektronik yang menyediakan berbagai produk terbaru
+        mulai dari smartphone, laptop, TV, hingga aksesoris lainnya. Kami berkomitmen memberikan pelayanan terbaik
+        dan produk berkualitas untuk kebutuhan Anda.
+    </p>
+    <p>
+        Temukan promo menarik setiap hari, garansi resmi, serta layanan pelanggan yang cepat dan ramah.
+        Belanja elektronik kini semakin mudah dan aman hanya di Bahtera Elektronik.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Produk Unggulan</h2>
+    <div class="menu-container">
+        <div class="menu-card">
+            <img src="gambar/hp-xiaomi-kamera-terbaik-Xiaomi-15-ultra-400x400.webp"Smartphone" />
+            <h3>Smartphone</h3>
+            <p>Berbagai pilihan HP terbaru dengan harga terbaik.</p>
+        </div>
+
+        <div class="menu-card">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8" alt="Laptop" />
+            <h3>Laptop</h3>
+            <p>Dari laptop kerja hingga gaming tersedia lengkap.</p>
+        </div>
+
+        <div class="menu-card">
+            <img src="gambar/pngtree-led-tv-television-screen-vector-png-image_6673700.png"TV LED" />
+            <h3>TV LED</h3>
+            <p>Kualitas gambar jernih untuk hiburan keluarga.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="promo" style="background:#c9c9d3;">
+    <h2>Promo Spesial Minggu Ini</h2>
+    <p>🎉 Diskon hingga <b>30%</b> untuk pembelian smartphone tertentu!</p>
+    <p>🔥 Cashback hingga <b>Rp 300.000</b> untuk pembelian laptop!</p>
+    <p>⭐ Gratis pemasangan untuk pembelian TV LED 43 inch ke atas.</p>
+</section>
+
+<section class="section" id="tentang-kami"" style="background:#0b61e2;">
+    <h2>Tentang Kami</h2>
+    <p>
+        Berdiri sejak tahun 2010, Bahtera Elektronik terus berkembang menjadi salah satu toko elektronik terpercaya
+        di Indonesia. Kami menghadirkan produk berkualitas, garansi resmi, dan pelayanan ramah.
+    </p>
+</section>
+
+<section class="section" id="layanan-kami">
+    <h2>Layanan Kami</h2>
+    <div class="menu-container">
+        <div class="menu-card">
+            <img src="gambar/images.jpeg" alt="Service Elektronik" />
+            <h3>Service Elektronik</h3>
+            <p>Perbaikan perangkat elektronik dengan teknisi profesional.</p>
+        </div>
+        <div class="menu-card">
+            <img src="gambar/images1.jpeg" alt="konsultasi produk" />
+            <h3>Konsultasi Produk</h3>
+            <p>Bantuan memilih produk terbaik sesuai kebutuhan Anda.</p>
+        </div>
+        <div class="menu-card">
+            <img src= "gambar/images2.jpeg " alt="instalasi perangkat"/>
+            <h3>Instalasi Perangkat</h3>
+            <p>Layanan pemasangan untuk TV, AC, CCTV, dan lainnya.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="testimoni" style="background:#35adc2;">
+    <h2>Apa Kata Pelanggan?</h2>
+    <p>"Produk original dan pelayanan cepat, sangat puas!" – <b>Andi</b></p>
+    <p>"Harga bersaing dan banyak promo menarik!" – <b>Sarah</b></p>
+    <p>"Pengiriman cepat dan barang aman." – <b>Rizky</b></p>
+</section>
+
+<section class="section" style="background:#5d9aee;">
+    <h2>Kenapa Belanja di Bahtera Elektronik?</h2>
+    <p>✔ Produk 100% Original<br>✔ Garansi Resmi<br>✔ Harga Kompetitif<br>✔ Pelayanan Ramah & Cepat</p>
+</section>
+
+<section class="section">
+    <h2>Kontak Kami</h2>
+    <p>📍 Alamat: Jl. Raya Elektronik No. 55<br>
+       📞 Telp: 0812-3456-7890<br>
+       ✉ Email: bahtera.elektronik@mail.com
+    </p>
+</section>
+
+<footer>
+    <p>© 2025 Bahtera Elektronik BY:FAISAL AGAI| Semua Hak Dilindungi</p>
+</footer>
+
+<a href="https://wa.me/6281234567890" style="position:fixed; bottom:20px; right:20px; background:#25d366; padding:15px 20px; border-radius:50px; color:white; font-weight:bold; text-decoration:none; box-shadow:0 4px 12px rgba(0,0,0,0.3);">Chat WA</a>
+
+</body>
+</html>
+
+
+ 
